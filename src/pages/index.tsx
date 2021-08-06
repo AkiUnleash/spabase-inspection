@@ -10,7 +10,7 @@ type Props = {
 
 const getTitles = async () => {
   const { data, error } = await client
-    .from("manage_title")
+    .from("manga_title")
     .select("*")
     .order("title");
   if (!error && data) {
